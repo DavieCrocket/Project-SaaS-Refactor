@@ -1,0 +1,1300 @@
+
+.navbar-toggler {
+  position: absolute;
+  right: var(--size-50);
+  top: var(--size-10);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  position: relative;
+  color: var(--white);
+  font-size: var(--size-20);
+  cursor: pointer;
+  pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar .nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.logoNavBar {
+  display: flex;
+  margin-top: 25px;
+}
+
+.logo img{
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.navbar {
+  display: flex;
+  font-size: 8px;
+  line-height: 0.8;
+  margin-left: 0;
+  margin-right: auto;
+  margin-top: 5px;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 500;
+  transition: ease-in-out;
+  padding: var(--size-16);
+  max-width: 1200px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.navbar ul li{
+  min-width: 50px;
+  font-size: 16px;
+  line-height: .8;
+  margin: 0 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.navbar-toggler span {
+  color: var(--font-color-dark);
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.logo img {
+  width: auto;
+  height: 50px;
+  margin-top: 5px;
+}
+
+.nav-link a {
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: uppercase;
+  margin-right: var(--size-40);
+  line-height: var(--size-20);
+}
+
+[aria-expanded="false"] ~ ul .navBuyBtn {
+  margin-left: 30px;
+}
+
+.btn-link .buyNow {
+  font-size: 14px;
+  color: white;
+  margin-top: 12px;
+  width: 115px;
+}
+
+.buyNow {
+  position: relative;
+  top: 6px;
+}
+
+.topSectionContainer {
+  background-image: url("/assets/svg/backgroundGradient.jpg");
+  background-color: var(--footer);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 90%;
+  /* position: center; */
+  z-index: 1;
+  padding: 25px 0 20px 0;
+}
+
+.topSection {
+  max-width: 1200px;
+}
+
+.logo {
+  margin-left: 30px;
+  margin-right: auto;
+}
+
+.empTeams,
+.banner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+  margin-top: 60px;
+}
+
+.teams {
+  display: grid;
+  margin-left: 50px;
+  font-size: 14px;
+}
+
+.empower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.teams .empower {
+  margin-top: 50px;
+  color: black;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.empTeams .icons img {
+  padding: 10px;
+  border: 1px solid rgba(239, 241, 241, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(239, 241, 241, 1);
+  transition: ease-in-out 0.3s;
+}
+
+.empTeams .icons .smIcon img {
+  width: 70px;
+  height: 70px;
+}
+
+.empTeams .icons .lgIcon img {
+  width: 78px;
+  height: 78px;
+}
+
+.play-learn {
+  display: flex;
+  margin-top: 10px;
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: start;
+}
+
+.btn-wrapper .btn-link,
+.play-learn .btn-link {
+  width: 150px;
+}
+
+.btn .playCircle {
+  position: relative;
+  right: 40px;
+  width: 25px;
+  height: 25px;
+  margin-top: 12px;
+  margin-right: 5px;
+}
+
+.playVideo,
+.playVideo2 {
+  position: relative;
+  left: 15px;
+  bottom: 30px;
+}
+
+.playVideo2 {
+  bottom: 33px;
+}
+
+.learn-more {
+  display: flex;
+  color: var(--font-color-link);
+  justify-content: left;
+  align-items: center;
+  margin-left: 25px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.icons {
+  display: grid;
+  grid-template-columns: 1fr repeat(4, 90px) 1fr;
+  grid-template-rows: auto;
+  justify-content: end;
+  align-items: center;
+  grid-gap: 10px;
+  margin: 25px;
+}
+
+.google {
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 1;
+  position: relative;
+  top: -5px;
+}
+
+.atlassian {
+  grid-column: 3 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.asana {
+  grid-column: 5 / span 1;
+  grid-row: 1 / span 1;
+}
+
+.blank {
+  grid-column: 2 / span 4;
+  grid-row: 2 / span 1;
+  margin: 10px 0;
+}
+
+.paypal {
+  grid-column: 2 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.weave {
+  grid-column: 4 / span 1;
+  grid-row: 3 / span 1;
+}
+
+.google-A {
+  grid-column: 3 / span 1;
+  grid-row: 4 / span 1;
+}
+
+.calendar {
+  grid-column: 5 / span 1;
+  grid-row: 4 / span 1;
+  position: relative;
+  top: 20px;
+}
+
+.banner,
+.keyBenefits {
+  margin: 0 50px;
+  margin-top: 75px;
+  padding-top: 75px;
+}
+
+.banner {
+  background-color: rgba(248, 250, 254, 0.8);
+  margin-bottom: 50px;
+}
+
+.cardHead {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.cardHead h2 {
+  color: var(--font-color-dark);
+  margin: 0;
+  line-height: 0.8;
+}
+
+.cardIcon {
+  width: 50px;
+  height: 50px;
+}
+
+.benefitCards {
+  display: grid;
+  margin: 50px 0;
+}
+
+.card-grid,
+.card-grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
+  gap: var(--size-30)
+}
+
+.cardSet {
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  display: grid;
+  padding: var(--size-16);
+  box-shadow: 0 0 20px rgba(48, 63, 100, 25%);
+  background: var(--white);
+  border-radius: 8px;
+  max-width: 400px;
+  cursor: pointer;
+}
+
+.card h5 {
+  color: var(--font-color-link)
+}
+
+.premium {
+  display: flex;
+  align-items: center;
+  height: 52px;
+}
+
+.premium,
+.withButton,
+.adjustMe,
+.documentationCard {
+  position: relative;
+}
+
+.premium {
+  top: 5px;
+}
+
+.withButton,
+.adjustMe {
+  top: 0;
+}
+
+.documentationCard {
+  top: -5px;
+}
+
+.submitButton1 {
+  display: flex;
+  justify-content: center;
+}
+
+.submitButton1 button {
+  position: relative;
+  margin-left: 10px;
+  color: white;
+  background-color: rgba(1, 201, 167, 0.8);
+  border: 1px solid transparent;
+  border-radius: 30px;
+  width: 75px;
+  height: 30px;
+}
+
+.submitButton1 p {
+  display: grid;
+  position: relative;
+  bottom: 10px;
+}
+
+.card .withButton,
+.card .adjustMe {
+  display: grid;
+  position: relative;
+  margin-top: 30px;
+}
+
+
+.card .adjustMe {
+  margin-top: 25px;
+}
+
+.banner {
+  display: grid;
+  max-width: 1100px;
+}
+
+.banner-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(512px, auto));
+  grid-template-areas: "leftPanel rightPanel";
+  gap: var(--size-30);
+}
+
+.leftPanel {
+  display: grid;
+  margin: 25px;
+  grid-area: leftPanel;
+  padding-bottom: 100px;
+}
+
+.rightPanel {
+  display: grid;
+  grid-area: rightPanel;
+}
+
+.rightPanel img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.whyFront {
+  display: grid;
+  justify-content: center;
+}
+
+.whyTitle {
+  display: flex;
+  justify-content: center;
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pitch {
+  display: flex;
+  justify-content: center;
+  text-align-last: center;
+}
+
+.bulletList {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* min-width: 500px; */
+  margin-bottom: 100px;
+  margin-top: 80px;
+}
+
+.bullet img {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin: 0 5px;
+
+}
+
+.bulletLeft .l-wing {
+  display: none;
+}
+
+.bulletLeft,
+.bulletMiddle,
+.bulletRight {
+  display: flex;
+  align-items: center;
+  height: auto;
+  width: 1fr;
+}
+
+.bulletRight .r-wing {
+  display: none;
+}
+
+.elements {
+  position: relative;
+  right: 30px;
+}
+
+.componentsLabel {
+  position: relative;
+  left: 70px;
+}
+
+.combined {
+  position: relative;
+  left: 35px;
+}
+
+.pageLayouts {
+  position: relative;
+  left: 75px;
+}
+
+.wing {
+  position: relative;
+  bottom: 2px;
+}
+
+.wing img {
+  align-items: center;
+  width: 100%;
+}
+
+.bannerPlay {
+  display: grid;
+  justify-content: center;
+  margin: 0 50px;
+}
+
+.bnrPlay img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerPlay {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+
+.plyBtn {
+  display: grid;
+  border: 1px solid rgba(226, 226, 226, 0.8);
+  border-radius: 50%;
+  box-shadow: 0px 10px 20px rgba(226, 226, 226, 0.8);
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  cursor: pointer;
+}
+
+.hubSpotSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
+  gap: var(--size-30);
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+.hubLeft {
+  display: flex;
+  height: 500px;
+}
+
+.hubLeft .dots {
+  position: relative;
+  top: 100px;
+  left: -350px;
+}
+
+.hubLeft .director {
+  position: relative;
+  left: 75px;
+  z-index: 10;
+}
+
+.hubLeft .dots img {
+  width: 200px;
+}
+
+.hubLeft .director img {
+  width: 375px;
+}
+
+.hubRight {
+  display: grid;
+  align-self: center;
+  display: grid;
+  justify-content: center;
+  height: fit-content;
+  align-content: center;
+  margin-bottom: 100px;
+}
+
+.hubRight .person {
+  margin-top: 25px;
+}
+
+.hubRight p {
+  width: auto;
+  margin-right: 25px;
+}
+
+.hubRight .person h3 {
+  width: auto;
+  color: black;
+  margin: 0;
+}
+
+.hubRight .person h5 {
+  width: auto;
+  color: rgba(50, 49, 49, 0.5);
+  margin: 0;
+}
+
+.hslogo img {
+  width: 125px;
+}
+
+.brandsSection {
+  display: grid;
+  grid-template-rows: 2 / auto;
+  justify-content: center;
+  max-width: 1200px;
+}
+
+.whyFront {
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.brandsList {
+  display: grid;
+  width: 1100px;
+}
+
+.brands {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 75px;
+}
+
+.brands img {
+  width: 125px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+.pricingSection {
+  display: grid;
+  align-items: center;
+}
+
+.pricingTitle {
+  margin: 75px 0;
+}
+
+.pricingTitle,
+.pricingTitle h1 {
+  display: grid;
+  justify-content: center;
+}
+
+.pricingTitle h1 {
+  color: black;
+  font-size: 30px;
+  margin: 0;
+}
+
+.pricingTitle h4 {
+  margin: 0;
+}
+
+.planSection {
+  display: grid;
+  margin-left: 100px;
+  min-width: 1024;
+}
+
+.plan {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.planHeader {
+  max-width: 300px;
+  padding: 25px;
+  margin-right: 20px;
+  border: 1px solid transpanent;
+  box-shadow: 0px 10px 20px rgba(226, 226, 226, 0.8);
+}
+
+.planPrice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.planPrice h1 {
+  font-size: 50px;
+  margin-bottom: 0;
+  color: black;
+}
+
+.planPrice h2 {
+  margin-left: 10px;
+  margin-bottom: 13px;
+}
+
+.planDivider hr {
+  margin-bottom: 30px;
+}
+
+.planHeader .start p {
+  display: grid;
+  font-size: 15px;
+}
+
+.planSection .planFooter .button {
+  display: flex;
+  margin-top: 50px;
+}
+
+.button .btn {
+  min-width: 137px;
+}
+
+.actions h6 {
+  margin-top: 8px;
+  margin-left: 5px;
+  color: rgba(16, 15, 15, 0.45)
+}
+
+.planSection {
+  display: grid;
+  justify-content: center;
+}
+
+.planFeatures {
+  display: flex;
+}
+
+.plan .planFeatures .rowWrapper {
+  max-width: 600px;
+}
+
+.plan .planFeatures .rowWrapper p {
+  font-size: 14px;
+}
+
+.plan .planFeatures .rowWrapper h3 {
+  color: black;
+}
+
+.planFeatures .rowOne,
+.planFeatures .rowTwo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+  padding: 10px 25px;
+  gap: 25px;
+  margin-right: 20px;
+  max-width: 600px;
+}
+
+.planFeatures .rowTwo p {
+  margin: 0;
+}
+
+.planFeatures img {
+  width: 50px;
+}
+
+.rowTwo .container {
+  display: flex;
+  padding-left: 0;
+}
+
+.rowTwo .container h3 {
+  display: flex;
+}
+
+.rowTwo .container .btn {
+  min-width: 75px;
+  height: 25px;
+  position: relative;
+  top: 23px;
+}
+
+.rowTwo .container h6 {
+  color: white;
+  position: relative;
+  top: -22px;
+}
+
+.rowTwo .container div {
+  margin-left: 10px;
+  background-color: green;
+}
+
+.hireUsSection {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(482px, 1fr));
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.leftSide {
+  display: grid;
+  justify-content: left;
+  background-color: rgb(32, 51, 91);
+}
+
+.top {
+  margin-left: 25px;
+  margin-top: 100px;
+  margin-bottom: -150px;
+}
+
+
+.bottom {
+  margin-left: 50px;
+}
+
+.leftSide .divider {
+  width: 175px;
+}
+
+.bottom .person h2 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.bottom .person p {
+  position: relative;
+  margin: 0;
+}
+
+.top .phrase {
+  margin-top: 10px;
+}
+
+.hireUs h1,
+.top .phrase p,
+.bottom .person h2 {
+  color: white;
+}
+
+.hireUs h1 {
+  margin-bottom: 5px;
+}
+
+.hireUs .goal {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.goal,
+.person p {
+  color: #9b9d9f;
+}
+
+.hireUs .divider {
+  height: 20px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.hireUs .divider p {
+  height: 20px;
+  padding-top: 5px;
+  padding-bottom: 30px;
+}
+
+.hireUs .divider hr {
+  font-color: white;
+}
+
+.personsImages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.personsImages .prsonSmall {
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.personsImages .prsonLarge {
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.rightSideWrapper {
+  background-color: rgb(32, 51, 91);
+}
+
+.rightSide {
+  display: grid;
+  grid-template-columns: 1fr 200px 200px 1fr;
+  grid-template-rows: repeat(12, auto);
+  display: grid;
+  column-gap: 10px;
+  row-gap: 20px;
+  justify-items: stretch;
+  align-items: stretch;
+  place-items: stretch;
+  justify-content: stretch;
+  background-color: white;
+  border-radius: 10px;
+  grid-template-areas:
+    ". fillOut fillOut ."
+    ". firstName lastName ."
+    ". firstName2 lastName2 ."
+    ". budget country ."
+    ". inputTellMore inputTellMore ."
+    ". inputTellMore inputTellMore ."
+    ". inputTellMore inputTellMore ."
+    ". marketingWrapper marketingWrapper ."
+  ;
+  margin: 20px;
+}
+
+.fillOut {
+  grid-area: fillOut;
+  height: 50px;
+}
+
+.fillOut h3 {
+  color: black;
+  line-height: 1.3;
+}
+
+.firstName {
+  display: grid;
+  grid-area: firstName;
+  height: 45px;
+}
+
+.firstName input {
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.lastName {
+  display: grid;
+  grid-area: lastName;
+}
+
+.lastName input {
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.firstName2 {
+  display: grid;
+  grid-area: firstName2;
+  height: 40px;
+}
+
+.firstName2 input {
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.lastName2 {
+  display: grid;
+  grid-area: lastName2;
+}
+
+.lastName2 input {
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.budget,
+.country {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+  padding-left: 5px;
+  grid-area: budget;
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  height: 40px;
+}
+
+.country {
+  grid-area: country;
+}
+
+.budget input,
+.country input,
+.inputTellMore input {
+  border: none;
+}
+
+.budget i,
+.country i {
+  color var(--font-color-base-light);
+}
+
+.inputTellMore {
+  grid-area: inputTellMore;
+}
+
+.inputTellMore {
+  border: 1px solid var(--font-color-base-light);
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+.textinput {
+  float: left;
+  width: 100%;
+  outline: none;
+  resize: none;
+  border: none;
+}
+
+.marketingWrapper {
+  display: grid;
+  grid-area: marketingWrapper;
+}
+
+.marketing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox input {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.invitation {
+  margin-left: 10px;
+}
+
+.privacyPolicyWrapper {
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  justify-content: space-around;
+  max-width: 75%;
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.privacyPolicy {
+  border-bottom: 1px dashed black;
+  height: 45px;
+}
+
+.privacyPolicy2 {
+  border-bottom: 1px dashed rgb(36, 118, 255);
+  height: 45px;
+  color: rgb(36, 118, 255)
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.submitButton button {
+  position: relative;
+  bottom: 15px;
+  color: white;
+  background-color: var(--font-color-link);
+  border-radius: 30px;
+  width: 125px;
+  cursor: pointer;
+}
+
+
+.footerTopWrapper {
+  display: grid;
+  grid-template-columns: .66fr .99fr;
+  margin: 50px 0 50px 50px;
+}
+
+.footerCompanyContact {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "footerContact company features documentation resources";
+}
+
+.footerCompanyContact h2 {
+  font-size: var(--size-16);
+  font-weight: 800;
+}
+
+.footerCompanyContact ul {
+  font-size: var(--size-14);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 30px;
+}
+
+.footerContact {
+  dispaly: grid;
+  margin-right: 25px;
+  min-width: 250px;
+  grid-area: footerContact;
+}
+
+.footerContact img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.footerContact span {
+  margin-right: 10px;
+  color: black;
+}
+
+.footerContact p {
+  margin: 3px;
+  font-size: var(--size-14);
+}
+
+.footerContact .colorLink {
+  color: var(--font-color-link);
+}
+
+.footerCompanyInfo {
+  display: flex;
+  margin-left: 20px;
+  grid-area: company;
+}
+
+.features {
+  grid-area: features;
+}
+
+.documentation {
+  grid-area: documentation;
+}
+
+.resources {
+  grid-area: resources;
+}
+
+.company,
+.features,
+.documentation,
+.resources {
+  margin: 0 25px;
+}
+
+.features,
+.documentation,
+.resources {
+  position: relative;
+  bottom: 14px;
+}
+
+.resources .account {
+  width: 110px;
+}
+
+.footerCompanyInfo h2 {
+  margin-top: 0;
+}
+
+.hiringBtn {
+  display: flex;
+}
+
+.wereHiringBtn {
+  position: relative;
+  top: 7px;
+  margin-left: 5px;
+}
+
+.footerCompanyInfo .wereHiringBtn button {
+  background-color: var(--font-color-link);
+  height: 18px;
+  border-radius: 5px;
+}
+
+.footerCompanyInfo .wereHiringBtn p {
+  position: relative;
+  bottom: 9px;
+  color: white;
+  font-size: 10px;
+  min-width: 60px;
+}
+
+.footerSectionTwo {
+  position: relative;
+  bottom: 20px;
+}
+
+.footerLegalSocial {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.socialBtns {
+  display: flex;
+}
+
+.socialBtns i {
+  border: 1px solid transparent;
+  background-color: var(--font-color-base-light);
+}
+
+.socialButton {
+  display: flex;
+  width: 60px;
+  height: 45px;
+  border-radius: 5px;
+  align-content: center;
+}
+
+.socialButton button {
+  border: 1px solid transparent;
+  border-radius: 5px;
+}
+
+.footerBottomWrapper {
+  display: grid;
+}
+
+.fa-facebook-f,
+.fa-google,
+.fa-twitter,
+.fa-github {
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  margin-top: 8px;
+}
+
+.countryDropDown {
+  display: flex;
+  align-items: center;
+  background-color: var(--font-color-base-light);
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.countryDropDown .oldGlory {
+  margin: 0 10px;
+}
+
+.countryDropDown img {
+  height: 20px;
+  width: 20px;
+}
+
+.countryDropDown input {
+  border: none;
+  background-color: var(--font-color-base-light);
+}
+
+.downChevron {
+  margin-right: 10px;
+}
+
+.legal {
+  margin-right: auto;
+}
+
+.divider {
+  padding: 0 5px;
+  margin-bottom: 35px;
+}
+
+.divider hr {
+  color: var(--font-color-base-light);
+}
+
+.copyrightTerms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.copyrightTerms .cookies {
+  max-width: 760px;
+  text-align: center;
+  margin-top: 10px;
+}

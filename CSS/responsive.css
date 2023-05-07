@@ -1,0 +1,333 @@
+/* iPads and Tablets - Portrait */
+@media screen and (max-width: 1023px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 500px;
+    padding-top: 50px;
+    position: absolute;
+    right: 0;
+    top: var(--size-100);
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(52 49 75 / 10%);
+    z-index: 20;
+    background-color: var(--white);
+    margin-right: auto;
+  }
+
+  [aria-expanded="true"] ~ ul .navBuyBtn {
+      position: relative;
+      right: 233px;
+      top: 76px;
+  }
+
+  [aria-expanded="true"] ~ ul .nav-link {
+    margin-right: 50px;
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: var(--size-50);
+    color: var(--font-color-dark);
+    margin-right: 30px;
+  }
+
+
+
+    /* topSectionContainer > empTeams Section */
+    .empTeams {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .power {
+      margin-top: 10px;
+    }
+  
+    .play-learn {
+      justify-content: center;
+      margin-top: 25px;
+    }
+  
+    .learn-more {
+      margin-top: 15px;
+    }
+  
+    /* keyBenefits, banner */
+    .keyBenefits,
+    .banner {
+      margin-top: 0;
+    }
+  
+    .banner {
+      padding-top: 0;
+    }
+  
+    .banner-grid {
+      grid-template-areas:
+        "leftPanel"
+        "rightPanel";
+      gap: var(--size-30);
+    }
+  
+    .prospectives,
+    .btn-wrapper,
+    .hubLeft,
+    .hubRight {
+      justify-content: center;
+      text-align: center;
+    }
+  
+    .hubRight {
+      margin-bottom: 50px;
+    }
+  
+    .wing {
+      width: 75px;
+    }
+  
+    .planHeader {
+      max-width: none;
+    }
+  
+    .planPrice,
+    .button {
+      justify-content: center;
+    }
+  
+    .actions h6 {
+      text-align: center;
+    }
+  
+    .planHeader {
+      max-width: 600px;
+    }
+  
+    .plan {
+      justify-content: center;
+    }
+  
+    .start p {
+      padding-left: 5px;
+    }
+  
+    .planFeatures {
+      margin-top: 50px;
+    }
+  
+    .hireUsSection {
+      justify-content: center;
+    }
+  
+    .leftSide .container {
+      display: grid;
+      justify-content: center;
+      margin-top: 0;
+    }
+  
+    .leftSide {
+      display: flex;
+    }
+  
+    .leftSide .top {
+      margin-top: 0;
+    }
+  
+    .leftSide .top .container {
+      margin-top: 0;
+    }
+  
+    .hireUs .divider {
+      margin-bottom: 0;
+      width: inherit;
+    }
+  
+    .top .container {
+      margin-right: 100px;
+    }
+  
+    .top .phrase {
+      margin-top: 0;
+    }
+  
+    .leftSide .bottom {
+      margin-left: 125px;
+    }
+  
+    .leftSide .personsImages {
+      margin-top: 25px;
+      margin-right: 25px;
+    }
+  
+    .brands {
+      justify-content: center;
+      margin-left: 50px;
+    }
+  
+    .brands img {
+      width: 93.75px;
+      height: 37.5px;
+      margin: 0 20px;
+    }
+  
+    .footerTopWrapper {
+      grid-template-columns: .66fr;
+      justify-content: center;
+    }
+  
+    .footerCompanyContact {
+      grid-template-areas: "footerContact company features"
+        ". documentation resources";
+      margin-left: 50px;
+    }
+  
+    .footerCompanyInfo {
+      margin-left: 0;
+    }
+    }
+  
+    @media screen and (max-width: 767px) {
+  
+      .footerCompanyContact {
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-areas:
+          ". footerContact ."
+          ". company ."
+          ". features ."
+          ". documentation ."
+          ". resources .";
+      }
+  
+      .card-grid,
+      .card-grid2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      /* keyBenefits */
+      .card {
+        margin: 10px;
+      }
+  
+      .bulletMiddle .bullet,
+      .bulletRight .bullet {
+        position: relative;
+        right: 73px;
+      }
+  
+      .bulletList {
+        display: grid;
+      }
+  
+      .bulletList .basic {
+        display: grid;
+      }
+  
+      .bulletList .wing img {
+        display: none;
+      }
+  
+      .bulletList .elements p,
+      .bulletList .comp p,
+      .bulletList .comb p,
+      .bulletList .pgLayouts p {
+        position: relative;
+        left: 25px;
+        bottom: 55px;
+      }
+  
+      .bulletList .elements p {
+        position: relative;
+        left: 125px;
+        bottom: 55px;
+      }
+  
+      .bulletList .comb p {
+        position: relative;
+        left: 63px;
+        bottom: 55px;
+      }
+  
+      .brands {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .brandsSection {
+        margin-left: 30px;
+      }
+  
+      .planFeatures .rowOne,
+      .planFeatures .rowTwo {
+        max-width: 500px;
+      }
+  
+      .leftSide {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .leftSide {
+        justify-content: center;
+      }
+  
+      .leftSide .hireUs {
+        display: grid;
+        justify-items: center;
+      }
+  
+      .leftSide .bottom {
+        margin: 0 25px;
+      }
+  
+      .rightSide {
+        grid-template-columns: 1vw 250px 1vw;
+        grid-template-areas:
+          ". fillOut ."
+          ". fillOut ."
+          ". firstName ."
+          ". lastName ."
+          ". firstName2  ."
+          ". lastName2 ."
+          ". budget  ."
+          ". country ."
+          ". inputTellMore  ."
+          ". inputTellMore ."
+          ". inputTellMore  ."
+          ". inputTellMore ."
+          ". inputTellMore  ."
+          ". inputTellMore ."
+          ". marketingWrapper  ."
+          ". marketingWrapper .";
+        margin-bottom: 25px;
+      }
+  
+      .rightSide .lastName,
+      .rightSide .lastName2 {
+        height: 40px;
+      }
+  
+      .rightSide .privacyPolicy2 {
+        display: none;
+      }
+  
+      .footerLegalSocial {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+  
+      .socialButtons {
+        flex-wrap: wrap;
+      }
+  
+    }
