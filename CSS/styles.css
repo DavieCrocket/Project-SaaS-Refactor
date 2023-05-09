@@ -340,6 +340,16 @@
   justify-content: center;
 }
 
+.cardSet a {
+    position: relative;
+    transition: all 0.2s ease-out;
+    top: 0;
+  }
+
+.cardSet a:hover {
+  top: -0.875rem;
+}
+
 .card {
   display: grid;
   padding: var(--size-16);
