@@ -451,7 +451,6 @@
 }
 
 .rightPanel img {
-  /* display: block; */
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -460,7 +459,6 @@
 .whyFront {
   display: grid;
   justify-content: center;
-  margin-top: 75px;
 }
 
 .whyTitle {

@@ -150,6 +150,7 @@
 
   .leftSide {
     display: flex;
+    height: 292px;
   }
 
   .leftSide .top {
@@ -158,11 +159,12 @@
 
   .leftSide .top .container {
     margin-top: 0;
+    margin-right: 0;
   }
 
   .hireUs .divider {
     margin-bottom: 0;
-    width: inherit;
+    width: 300px;
   }
 
   .top .container {
@@ -171,10 +173,11 @@
 
   .top .phrase {
     margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .leftSide .bottom {
-    margin-left: 125px;
+    margin-left: 50px;
   }
 
   .leftSide .personsImages {
@@ -206,6 +209,10 @@
 
   .footerCompanyInfo {
     margin-left: 0;
+  }
+
+  .footerLegalSocial {
+    margin-left: 25px;
   }
   }
 
@@ -307,6 +314,11 @@
     margin: 0 25px;
   }
 
+  .bottom {
+    margin: 0;
+    margin-right: 200px;
+  }
+
   .rightSide {
     grid-template-columns: 1vw 250px 1vw;
     grid-template-areas:
@@ -327,6 +339,7 @@
       ". marketingWrapper  ."
       ". marketingWrapper .";
     margin-bottom: 25px;
+    margin-left: 50px;
   }
 
   .rightSide .lastName,
@@ -344,11 +357,12 @@
     margin-left: 0;
   }
 
-  .socialButton {
-    flex-wrap: wrap;
+  .footerLegalSocial .socialBtns .socialButton {
+    /* flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 0; */
+    width: 52px;
   }
 
 /* MEDIA 625PX */
@@ -374,18 +388,6 @@
     margin: 0;
   }
 
-  /* .hubRight {
-    flex-basis: 300px;
-  } */
-  }
-
-
-  /* .footerLegalSocial {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-left: 0;
-  } */
-
   .legal {
     display: flex;
     justify-content: center;
@@ -400,4 +402,10 @@
   .countryDropDown {
     margin-right: 0;
   }
+
+/* MEDIA 465PX */
+@media screen and (max-width: 625px) {
+
+
+}
 } 
