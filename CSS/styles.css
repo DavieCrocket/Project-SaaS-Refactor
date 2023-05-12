@@ -36,7 +36,7 @@
 }
 
 .logo img{
-  width: auto;
+  /* width: auto; */
   height: 50px;
   margin-top: 5px;
 }
@@ -57,6 +57,7 @@
   transition: ease-in-out;
   padding: var(--size-16);
   max-width: 1200px;
+  margin: auto;
 }
 
 .navbar ul {
@@ -82,6 +83,10 @@
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
+}
+
+.sticky {
+
 }
 
 .logo img {
@@ -123,9 +128,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0% 90%;
-  /* position: center; */
   z-index: 1;
-  padding: 25px 0 20px 0;
+  padding: 25px 0;
 }
 
 .topSection {
@@ -139,7 +143,7 @@
 
 .empTeams {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(512px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin-top: 60px;
 }
 
@@ -238,55 +242,61 @@
   margin: 25px;
 }
 
-/* .heroIcon {
+.heroIcon {
   animation-name: iconAnimate;
   animation-delay: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
-} */
+}
 
 .google {
   grid-column: 2 / span 1;
   grid-row: 1 / span 1;
   position: relative;
   top: -5px;
-  /* animation-duration: 0.5s; */
+  animation-duration: 0.1s;
 }
 
 .atlassian {
   grid-column: 3 / span 1;
   grid-row: 1 / span 1;
-  /* animation-duration: 0.5s; */
+  position: relative;
+  animation-duration: 0.2s;
 }
 
 .asana {
   grid-column: 5 / span 1;
   grid-row: 1 / span 1;
-  /* animation-duration:0.5s; */
+  position: relative;
+  animation-duration:0.3s;
 }
 
 .blank {
   grid-column: 2 / span 4;
   grid-row: 2 / span 1;
+  position: relative;
   margin: 10px 0;
 }
 
 .paypal {
   grid-column: 2 / span 1;
   grid-row: 3 / span 1;
-  /* animation-duration:0.5s; */
+  position: relative;
+  animation-duration:0.4s;
 }
 
 .weave {
   grid-column: 4 / span 1;
   grid-row: 3 / span 1;
-  /* animation-duration:0.5s; */
+  position: relative;
+  animation-duration:0.5s;
 }
 
 .google-A {
   grid-column: 3 / span 1;
   grid-row: 4 / span 1;
-  /* animation-duration:0.5s; */
+  position: relative;
+  animation-duration:0.6s;
 }
 
 .calendar {
@@ -294,11 +304,14 @@
   grid-row: 4 / span 1;
   position: relative;
   top: 20px;
-  /* animation-duration:0.5s; */
+  animation-duration:0.7s;
 }
 
 .keyBenefits {
-  max-width: 1200px;
+  display: flex;
+  /* flex-direction: center; */
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 0 50px;
   margin-top: 75px;
   padding-top: 75px;
@@ -331,7 +344,7 @@
 .card-grid,
 .card-grid2 {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(201px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: var(--size-30)
 }
 
@@ -473,6 +486,7 @@
   display: flex;
   justify-content: center;
   text-align-last: center;
+  margin: 0 25px;
 }
 
 .bulletList {
@@ -516,17 +530,17 @@
 
 .componentsLabel {
   position: relative;
-  left: 70px;
+  left: 54px;
 }
 
 .combined {
   position: relative;
-  left: 35px;
+  left: 18px;
 }
 
 .pageLayouts {
   position: relative;
-  left: 75px;
+  left: 60px;
 }
 
 .wing {
@@ -545,6 +559,7 @@
   margin: 0 50px;
   position: relative;
   margin-bottom: 50px;
+  margin: auto;
 }
 
 .bnrPlay img {
@@ -565,7 +580,7 @@
 
 .hubSpotSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(472px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(461px, 1fr));
   gap: var(--size-30);
   margin-top: 100px;
   margin-left: 50px;
@@ -599,11 +614,11 @@
 .hubRight {
   display: grid;
   align-self: center;
-  display: grid;
-  justify-content: center;
   height: fit-content;
+  width: 375px;
   align-content: center;
   margin-bottom: 100px;
+  margin-left: 50px;
 }
 
 .hubRight .person {
@@ -611,7 +626,6 @@
 }
 
 .hubRight p {
-  width: auto;
   margin-right: 25px;
 }
 
@@ -645,7 +659,6 @@
 
 .brandsList {
   display: grid;
-  width: 1100px;
 }
 
 .brands {
@@ -814,7 +827,7 @@
 .hireUsSection {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(482px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(474px, 1fr));
   margin-top: 50px;
   padding: 30px;
 }
@@ -834,6 +847,7 @@
 
 .bottom {
   margin-left: 50px;
+  padding-bottom: 60px;
 }
 
 .leftSide .divider {
@@ -844,6 +858,11 @@
   margin-top: 60px;
   margin-bottom: 0;
 }
+
+.bottom .person h2 {
+    margin-top: 200px;
+}
+
 
 .bottom .person p {
   position: relative;
@@ -1103,8 +1122,8 @@
 
 .footerTopWrapper {
   display: grid;
-  grid-template-columns: .66fr .99fr;
-  margin: 50px 0 50px 50px;
+  /* grid-template-columns: .66fr .99fr; */
+  margin: 50px 0px 50px 50px;
 }
 
 .footerCompanyContact {
@@ -1317,7 +1336,7 @@
   margin-top: 10px;
 }
 
-/* @keyframes iconAnimate {
+@keyframes iconAnimate {
   from {
     top: 100px;
     opacity: 0;
@@ -1326,5 +1345,5 @@
   to {
     top: 0;
     opacity: 1;
-  } */
+  }
 }

@@ -1,4 +1,5 @@
-/* iPads and Tablets - Portrait */
+/* MEDIA 1023PX */
+  /* iPads and Tablets - Portrait [768 - 1023] */
 @media screen and (max-width: 1023px) {
   [aria-controls="navbarDropdown"] {
     display: block;
@@ -64,7 +65,7 @@
 
   /* keyBenefits, banner */
   .keyBenefits {
-    margin-top: 0;rightPanel
+    margin-top: 0;
   }
 
   .leftPanel {
@@ -97,16 +98,37 @@
     text-align: center;
   }
 
-  .hubRight {
+  .hubRight {align-items: center;
     margin-bottom: 50px;
+    margin-left: 150px;
   }
 
   .wing {
     width: 75px;
   }
 
+  .bulletList .elements {
+    right: 20px;
+  }
+
+  .bulletList .componentsLabel {
+    left: 58px;
+  }
+
+  .bulletList .pageLayouts {
+    left: 60px;
+  }
+
   .bnrPlay {
     margin: 0 50px;
+  }
+
+  .bannerPlay .plyBtn {
+    top: 36%;
+  }
+
+  .planSection {
+    margin-left: 100px;
   }
 
   .planHeader {
@@ -150,7 +172,7 @@
 
   .leftSide {
     display: flex;
-    height: 292px;
+      height: 400px;
   }
 
   .leftSide .top {
@@ -214,19 +236,29 @@
   .footerLegalSocial {
     margin-left: 25px;
   }
-  }
+}
 
 /* MEDIA 767PX */
+    /* Phones - Portrait [360 - 767] */
 @media screen and (max-width: 767px) {
-  .footerCompanyContact {
-    grid-template-columns: 1fr 300px 1fr;
-    grid-template-areas:
-      ". footerContact ."
-      ". company ."
-      ". features ."
-      ". documentation ."
-      ". resources .";
-  }
+  .navbar {
+      display: flex;
+      font-size: 8px;
+      line-height: 0.8;
+      margin-left: 0;
+      margin-right: auto;
+      margin-top: 5px;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 500;
+      transition: ease-in-out;
+      padding: var(--size-16);
+      max-width: 1200px;
+      margin: auto;
+    }
 
   .card-grid,
   .card-grid2 {
@@ -251,6 +283,7 @@
 
   .bulletList .basic {
     display: grid;
+    width: 300px;
   }
 
   .bulletList .wing img {
@@ -268,18 +301,72 @@
 
   .bulletList .elements p {
     position: relative;
-    left: 125px;
+    left: 100px;
+    bottom: 55px;
+  }
+
+  .bulletList .comp p {
+    position: relative;
     bottom: 55px;
   }
 
   .bulletList .comb p {
     position: relative;
-    left: 63px;
+    left: 65px;
     bottom: 55px;
   }
 
   .bnrPlay {
     margin: 0 25px;
+  }
+
+  .bannerPlay .plyBtn {
+    top: 26%;
+  }
+
+  .hubSpotSection {
+    margin-left: -40px;
+    margin-bottom: -160px;
+  }
+
+  .hubleft {
+    height: 0;
+    margin-left: 50px;
+    height: 400px;
+  }
+
+  .hubLeft .dots {
+    top: 100px;
+    left: -225px;
+  }
+
+  .hubLeft .director {
+    left: -30px;
+    top: 28px;
+  }
+
+  .hubLeft .dots img {
+    width: 141px;
+  }
+
+  .hubLeft .director img {
+    position: relative;
+    left: 106px;
+    width: 262px;
+  }
+
+  .hubRight {
+    position: relative;
+    right: 100px;
+    top: -120px;
+  }
+
+  .hubright p {
+    max-width: 300px;
+  }
+  
+  .hubright .hslogo {
+    max-width: 100px;
   }
 
   .brands {
@@ -289,6 +376,10 @@
 
   .brandsSection {
     margin-left: 30px;
+  }
+
+  .plan {
+    margin-right: 75px;
   }
 
   .planFeatures .rowOne,
@@ -303,7 +394,9 @@
 
   .leftSide {
     justify-content: center;
-  }
+    margin: 0 60px;
+    height: 450px;
+}
 
   .leftSide .hireUs {
     display: grid;
@@ -315,8 +408,22 @@
   }
 
   .bottom {
-    margin: 0;
-    margin-right: 200px;
+    margin: auto;
+    padding-bottom: 42px;
+    position: relative;
+    top: 120px;
+    left: 15px;
+  }
+
+  .bottom .person h2 {
+    justify-content: center;
+    margin-top: 0;
+    position: relative;
+    top: 150px;
+  }
+
+  .phrase {
+    padding-bottom: 47px;
   }
 
   .rightSide {
@@ -340,6 +447,8 @@
       ". marketingWrapper .";
     margin-bottom: 25px;
     margin-left: 50px;
+    justify-content: center;
+    margin-top: 150px;
   }
 
   .rightSide .lastName,
@@ -358,19 +467,25 @@
   }
 
   .footerLegalSocial .socialBtns .socialButton {
-    /* flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 0; */
     width: 52px;
   }
 
+  .footerCompanyContact {
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-areas:
+      ". footerContact ."
+      ". company ."
+      ". features ."
+      ". documentation ."
+      ". resources .";
+  }
+}
+
 /* MEDIA 625PX */
-@media screen and (max-width: 625px) {
+ @media screen and (max-width: 625px) {
   .prospectives {
     display: flex;
-    flex-direction: column;
-    }
+  }
 
   .hslogo  {
     display: flex;
@@ -401,11 +516,5 @@
 
   .countryDropDown {
     margin-right: 0;
-  }
-
-/* MEDIA 465PX */
-@media screen and (max-width: 625px) {
-
-
-}
+  } 
 } 
