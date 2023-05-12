@@ -20,14 +20,14 @@
   display: none;
 }
 
-.navbar .nav {
+.navbar,
+.navbar .container {
   display: flex;
   align-items: center;
 }
 
-.navbar .container {
-  display: flex;
-  align-items: center;
+.navbar {
+  background-color: rgba(146, 146, 161, 0.2);
 }
 
 .logoNavBar {
@@ -36,7 +36,6 @@
 }
 
 .logo img{
-  /* width: auto; */
   height: 50px;
   margin-top: 5px;
 }
@@ -104,12 +103,14 @@
   margin-right: var(--size-40);
   line-height: var(--size-20);
 }
-
-[aria-expanded="false"] ~ ul .navBuyBtn {
-  margin-left: 30px;
-}
+/* 
+[aria-expanded="true"] ~ ul .navBuyBtn {
+  margin-left: 200px;
+  margin-bottom: 50px;
+} */
 
 .btn-link .buyNow {
+  position: relative;
   font-size: 14px;
   color: white;
   margin-top: 12px;
@@ -119,6 +120,7 @@
 .buyNow {
   position: relative;
   top: 6px;
+  color: white;
 }
 
 .topSectionContainer {
@@ -886,6 +888,11 @@
 .hireUs .goal {
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.hireUsItem {
+  display: grid;
+  min-width: 50px;
 }
 
 .goal,

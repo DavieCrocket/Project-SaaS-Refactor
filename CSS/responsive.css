@@ -42,6 +42,18 @@
     margin-right: 30px;
   }
 
+  [aria-expanded="true"] ~ ul {
+    display: flex;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    height: 400px;
+    padding-right: 100px;
+  }
+
+  [aria-expanded="true"] ~ ul .navBuyBtn {
+    margin-left: -100px;
+    margin-bottom: 50px;
+  }
 
 
   /* topSectionContainer > empTeams Section */
@@ -241,31 +253,22 @@
 /* MEDIA 767PX */
     /* Phones - Portrait [360 - 767] */
 @media screen and (max-width: 767px) {
-  .navbar {
-      display: flex;
-      font-size: 8px;
-      line-height: 0.8;
-      margin-left: 0;
-      margin-right: auto;
-      margin-top: 5px;
-      align-items: center;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 500;
-      transition: ease-in-out;
-      padding: var(--size-16);
-      max-width: 1200px;
-      margin: auto;
-    }
-
-  .card-grid,
-  .card-grid2 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  [aria-expanded="true"] ~ ul {
+    display: grid;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    height: 400px;
   }
+
+    /* [aria-expanded="true"] ~ .btn .btn-link {
+    position: relative;
+    left: 200px;
+  } */
+
+    [aria-expanded="true"] ~ ul .navBuyBtn {
+      margin-left: 200px;
+      margin-bottom: 50px;
+    }
 
   .card {
     margin: 10px;
